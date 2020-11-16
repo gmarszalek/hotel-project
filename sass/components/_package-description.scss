@@ -1,0 +1,38 @@
+.description {
+    background-color: $color-black;
+    color: $color-white;
+    padding: 55px 33px 30px 48px;
+    z-index: 2;
+
+    &__title {
+        text-align: center;
+        font-size: 15px;
+        line-height: 50px;
+        letter-spacing: 6px;
+        margin-bottom: 45px;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 23px;
+        letter-spacing: 2.4px;
+        font-weight: 300;
+    }
+
+    &__icon {
+        fill: $color-orange;
+        width: 37px;
+        height: 37px;
+        margin-right: 22px;
+    }
+
+    &__btn {
+        margin-top: 30px;
+    }
+}

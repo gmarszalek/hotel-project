@@ -1,0 +1,18 @@
+:root {
+  --pale-grey: #f1f0f3;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}

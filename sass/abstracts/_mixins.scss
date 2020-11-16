@@ -1,0 +1,40 @@
+@mixin displayFlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == bp_smallest {
+    @media only screen and (max-width: 360px) {
+      @content;
+    }
+  }
+  @if $breakpoint == bp_small {
+    @media only screen and (max-width: 375px) {
+      @content;
+    }
+  }
+  @if $breakpoint == bp_medium {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+  @if $breakpoint == bp_large {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+  @if $breakpoint == bp_largest {
+    @media only screen and (min-width: 1360px) {
+      @content;
+    }
+  }
+}

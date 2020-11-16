@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylowy Hotel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- nav -->
+    <nav class="navigation">
+      <div class="navigation__item--brand">
+        <a class="navigation__link navigation__link--brand" href="#header"><img src="./img/brand.png" width="48"
+            height="56" alt="brand-logo"></a>
+      </div>
+      <div class="navigation__collapse">
+        <ul class="navigation__list navigation__list--border">
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link">Poznaj nas</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#feedback" class="navigation__link">Opinie</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#package" class="navigation__link">Oferty</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#advantages" class="navigation__link">Nasze atuty</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#conferences" class="navigation__link">Konferencje</a>
+          </li>
+        </ul>
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">
+              <svg class="navigation__icon navigation__icon--fb">
+                <use xlink:href="img/sprite.svg#facebook-app-symbol" />
+              </svg>
+            </a>
+          </li>
+          <li class="navigation__item">
+            <div class="navigation__item-box">
+              <span class="navigation__link">PL</span>
+              <svg class="navigation__icon navigation__icon--arrow">
+                <use xlink:href="img/sprite.svg#drop-down-arrow" />
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="navigation__btn">
+        <span>
+          <svg class="navigation__icon">
+            <use xlink:href="img/sprite.svg#hamburger" />
+          </svg>
+        </span>
+      </button>
+    </nav>
+    <header class="header" id="header">
+      <div class="header__main">
+        <div class="overlay-light"></div>
+        <img src="img/n4.jpg" srcset="img/n4@2x.jpg 2x,
+             img/n4@3x.jpg 3x" alt="background-img">
+
+        <div class="heading">
+          <div class="heading__main">
+            <h1>Stylowy Hotel</h1>
+          </div>
+          <a href="#about" class="heading__sub">
+            <svg class="heading__icon navigation__icon--arrow">
+              <use xlink:href="img/sprite.svg#computer-mouse" />
+            </svg>
+            <span>poznaj hotel</span>
+          </a>
+        </div>
+
+      </div>
+      <div class="header__bottom">
+        <div class="header__box">
+          <div class=" header__box-text--color">42</div>
+          <div class="header__box-text">pokoje <br> i apartamenty</div>
+        </div>
+        <div class="header__box">
+          <div class=" header__box-text--color">120</div>
+          <div class="header__box-text">miejsc <br> konferencyjnych</div>
+        </div>
+      </div>
+      <div class="header__asside">
+        <div class="booking">
+          <div class="booking__title">
+            <p>Termin pobytytu</p>
+          </div>
+          <div class="date">
+            <div class="date__left">
+              <span class="date__day">28</span>
+              <div class="date__box">
+                <span class="date__mounth">KWI 18'</span>
+                <svg class="date__icon">
+                  <use xlink:href="img/sprite.svg#drop-down-arrow" />
+                </svg>
+              </div>
+
+            </div>
+            <div class="date__right">
+              <span class="date__day">29</span>
+              <div class="date__box">
+                <span class="date__mounth">KWI 18'</span>
+                <svg class="date__icon">
+                  <use xlink:href="img/sprite.svg#drop-down-arrow" />
+                </svg>
+              </div>
+
+            </div>
+          </div>
+          <div class="booking__cta">
+            <span>rezerwuj online</span>
+          </div>
+          <div class="booking__info">
+            <div>
+              <svg class="booking__icon">
+                <use xlink:href="img/sprite.svg#percentage" />
+              </svg>
+            </div>
+            <div><span class="booking__info--color">Najniższa cena</span> tylko na naszej stronie</div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about" id="about">
+
+        <div class="about__img-box about__left">
+          <img src="img/14_2.jpg" srcset="img/14_2@2x.jpg 2x,
+             img/14_2@3x.jpg 3x" alt="hotel-room">
+        </div>
+
+
+        <div class="about__right">
+          <div class="text-card">
+            <div class="text-card__title section-heading">
+              <h2>Lorem ipsum</h2>
+            </div>
+            <p class="text-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lobortis facilisis
+              leo, vitae fringilla velit accumsan non. Praesent nisi libero, tristique nec lorem sed, aliquam tristique
+              ex. Proin vitae nibh sit amet libero porttitor gravida. Fusce quis commodo libero. </p>
+            <button class="btn btn-lg text-card__btn">Aktualne oferty</button>
+          </div>
+          <div class="about__slider">
+            <div class="slider">
+              <div class="slider__img">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/00.jpg" srcset="img/00@2x.jpg 2x,
+                              img/00@3x.jpg 3x" class="layer" alt="slide1"></div>
+                    <div class="swiper-slide"><img src="img/00.jpg" srcset="img/00@2x.jpg 2x,
+                              img/00@3x.jpg 3x" class="layer" alt="slide2"></div>
+                    <div class="swiper-slide"><img src="img/00.jpg" srcset="img/00@2x.jpg 2x,
+                              img/00@3x.jpg 3x" class="layer" alt="slide3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__set">
+
+                <span class="slider__set--left">
+                  <svg class="slider__icon slider__icon--left">
+                    <use xlink:href="img/sprite.svg#right-chevron" />
+                  </svg>
+                </span>
+                <span class="slider__set--right">
+                  <svg class="slider__icon slider__icon--active">
+                    <use xlink:href="img/sprite.svg#right-chevron" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- sekcja opinie -->
+      <section class="feedback" id="feedback">
+        <div class="feedback__background">
+          <img src="img/Fotolia_199561174_Subscription_Monthly_M.jpg" srcset="img/Fotolia_199561174_Subscription_Monthly_M@2x.jpg 2x,
+          img/Fotolia_199561174_Subscription_Monthly_M@3x.jpg 3x" alt="feedback-img">
+        </div>
+        <div class="feedback__text">
+          <span class="feedback__quotes-mark">&quot;</span>
+          <p class="feedback__text--color">It is a long established fact that a reader will be distracted by the
+            readable content of a page when looking at its layout
+          </p>
+          <p class="feedback__text-author">MARIOLA B. - TRIPADVISOR</p>
+        </div>
+        <div class="btn-lg feedback__btn">Sprawdź opinie</div>
+      </section>
+      <section class="package" id="package">
+        <div class="package__title section-heading">
+          <h2>PROMOCYJNE PAKIETY POBYTOWE</h2>
+        </div>
+        <div class="package-slider__set">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="package__container">
+          <div class="package__description description">
+            <p class="description__title">DLACZEGO WARTO?</p>
+            <div class="description__box">
+              <span class="description__icon">
+                <svg class="description__icon">
+                  <use xlink:href="img/sprite.svg#percentage" />
+                </svg>
+              </span>
+              <span class="description__text">NAJNIŻSZA CENA
+                TYLKO NA STRONIE</span>
+            </div>
+            <div class="description__box">
+              <span class="description__icon">
+                <svg class="description__icon ">
+                  <use xlink:href="img/sprite.svg#percentage" />
+                </svg>
+              </span>
+              <span class="description__text">
+                WYJĄTKOWE PROMOCJE I OKAZJE
+              </span>
+            </div>
+            <div class="description__box">
+              <span class="description__icon">
+                <svg class="description__icon ">
+                  <use xlink:href="img/sprite.svg#percentage" />
+                </svg>
+              </span>
+              <span class="description__text">
+                SPERSONALIZOWANE OFERTY
+              </span>
+            </div>
+            <button class="btn-lg description__btn">WSZYSTKIE OFERTY</button>
+          </div>
+          <!-- Slider main container -->
+          <div class="swiper-container package-slider package__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="overlay-light"></div>
+
+                <div class="package-slider__details">
+                  <div class="package-slider__price">OD <span class="package-slider__price--large">500</span> ZŁ
+                    /POBYT
+                  </div>
+                  <div class="package-slider__title">Relaksacyjny pobyt w SPA</div>
+                  <div class="package-slider__box">
+                    <div>
+                      <span>
+                        <svg class="package-slider__icon">
+                          <use xlink:href="img/sprite.svg#clock" />
+                        </svg>
+                      </span>
+                      <span>Minimum 2 noce</span>
+                    </div>
+                    <div>
+                      <span>
+                        <svg class="package-slider__icon ">
+                          <use xlink:href="img/sprite.svg#tick-inside-circle" />
+                        </svg>
+                      </span>
+                      <span>Śniadanie w cenie</span>
+                    </div>
+                  </div>
+                </div>
+                <img src="img/Fotolia_143009926_Subscription_Monthly_M.jpg" srcset="img/Fotolia_143009926_Subscription_Monthly_M@2x.jpg 2x,
+                img/Fotolia_143009926_Subscription_Monthly_M@3x.jpg 3x" alt="slide1">
+              </div>
+
+              <div class="swiper-slide">
+                <div class="overlay-light"></div>
+
+                <div class="package-slider__details">
+                  <div class="package-slider__price">OD <span class="package-slider__price--large">1600</span> ZŁ
+                    /POBYT
+                  </div>
+                  <div class="package-slider__title">Oferta majówkowa dla Rodziny</div>
+                  <div class="package-slider__box">
+                    <div>
+                      <span>
+                        <svg class="package-slider__icon">
+                          <use xlink:href="img/sprite.svg#clock" />
+                        </svg>
+                      </span>
+                      <span>Minimum 2 noce</span>
+                    </div>
+                    <div>
+                      <span>
+                        <svg class="package-slider__icon ">
+                          <use xlink:href="img/sprite.svg#tick-inside-circle" />
+                        </svg>
+                      </span>
+                      <span>Śniadanie w cenie</span>
+                    </div>
+                  </div>
+                </div>
+
+                <img src="img/Fotolia_117709829_Subscription_Monthly_M.jpg" srcset="img/Fotolia_117709829_Subscription_Monthly_M@2x.jpg 2x,
+                img/Fotolia_117709829_Subscription_Monthly_M@3x.jpg 3x" alt="slide2">
+
+              </div>
+              <div class="swiper-slide">
+                <div class="overlay-light"></div>
+
+                <div class="package-slider__details">
+                  <div class="package-slider__price">OD <span class="package-slider__price--large">500</span> ZŁ
+                    /POBYT
+                  </div>
+                  <div class="package-slider__title">Relaksacyjny pobyt w SPA</div>
+                  <div class="package-slider__box">
+                    <div>
+                      <span>
+                        <svg class="package-slider__icon">
+                          <use xlink:href="img/sprite.svg#clock" />
+                        </svg>
+                      </span>
+                      <span>Minimum 2 noce</span>
+                    </div>
+                    <div>
+                      <span>
+                        <svg class="package-slider__icon ">
+                          <use xlink:href="img/sprite.svg#tick-inside-circle" />
+                        </svg>
+                      </span>
+                      <span>Śniadanie w cenie</span>
+                    </div>
+                  </div>
+                </div>
+                <img src="img/Fotolia_143009926_Subscription_Monthly_M.jpg" srcset="img/Fotolia_143009926_Subscription_Monthly_M@2x.jpg 2x,
+                img/Fotolia_143009926_Subscription_Monthly_M@3x.jpg 3x" alt="slide1">
+              </div>
+
+              <div class="swiper-slide">
+                <div class="overlay-light"></div>
+
+                <div class="package-slider__details">
+                  <div class="package-slider__price">OD <span class="package-slider__price--large">1600</span> ZŁ
+                    /POBYT
+                  </div>
+                  <div class="package-slider__title">Oferta majówkowa dla Rodziny</div>
+                  <div class="package-slider__box">
+                    <div>
+                      <span>
+                        <svg class="package-slider__icon">
+                          <use xlink:href="img/sprite.svg#clock" />
+                        </svg>
+                      </span>
+                      <span>Minimum 2 noce</span>
+                    </div>
+                    <div>
+                      <span>
+                        <svg class="package-slider__icon ">
+                          <use xlink:href="img/sprite.svg#tick-inside-circle" />
+                        </svg>
+                      </span>
+                      <span>Śniadanie w cenie</span>
+                    </div>
+                  </div>
+                </div>
+
+                <img src="img/Fotolia_117709829_Subscription_Monthly_M.jpg" srcset="img/Fotolia_117709829_Subscription_Monthly_M@2x.jpg 2x,
+                img/Fotolia_117709829_Subscription_Monthly_M@3x.jpg 3x" alt="slide2">
+
+              </div>
+
+            </div>
+          </div>
+      </section>
+
+
+      <section class="advantages" id="advantages">
+        <div class="advantages__row advantages__row--1">
+          <div class="advantages__title section-heading">
+            <h2>ODKRYJ NASZE ATUTY</h2>
+          </div>
+          <div class="advantages__description">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy
+              text ever since the 1500s.</p>
+          </div>
+        </div>
+        <div class="advantages__row advantages__row--2">
+          <div class="advantages__img">
+            <img src="./img/Fotolia_166517175_Subscription_Monthly_M.jpg" />
+          </div>
+          <div class="advantages__card card">
+
+            <h3 class="section-sub-heading card__title">RELAKS PREMIUM W SPA</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s.
+            </p>
+            <button class="card__btn">SPRAWDŹ SZCZEGÓŁY</button>
+
+          </div>
+
+        </div>
+        <div class="advantages__row advantages__row--3">
+          <div class="advantages__img">
+            <div class="overlay"></div>
+            <img src="./img/F17.jpg" />
+          </div>
+          <div class="advantages__card card">
+
+            <h3 class="section-sub-heading card__title">DOSKONAŁE SMAKI</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s.
+            </p>
+            <button class="card__btn">SPRAWDŹ SZCZEGÓŁY</button>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="conferences" id="conferences">
+        <div class="conferences__row conferences__row--1">
+          <div class="conferences__img">
+            <div class="overlay-dark"></div>
+            <img src="img/Fotolia_169233327_Subscription_Monthly_M.jpg" srcset="img/Fotolia_169233327_Subscription_Monthly_M@2x.jpg 2x,
+            img/Fotolia_169233327_Subscription_Monthly_M@3x.jpg 3x" class="Fotolia_169233327_Subscription_Monthly_M">
+          </div>
+          <div class="conferences__text section-paragraph">
+            <div class="conferences__title section-heading section-heading--white">
+              <h2>KONFERENCJE W GÓRACH</h2>
+            </div>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour, or randomised words
+              which don't look even slightly believable. </p>
+          </div>
+        </div>
+        <div class="conferences__row conferences__row--2">
+          <div class="conferences__card">
+            <div class="conferences__card-img">
+              <img src="img/AC2.jpg" srcset="img/AC2@2x.jpg 2x, img/AC2@3x.jpg 3x" alt="conferences img_1">
+            </div>
+            <div class="conferences__card-box">
+              <div class="conferences__card-title">
+                ZAPLECZE <br> KONFERENCYJNE
+              </div>
+              <div class="conferences__card-des">
+                Lorem Ipsum is simply
+                dummy text of the printing and typesetting industry. Lorem Ipsum has
+              </div>
+              <button class="conferences__btn card__btn">SZCZEGÓŁY</button>
+            </div>
+          </div>
+
+          <div class="conferences__card">
+            <div class="conferences__card-img">
+              <img src="img/10.jpg" srcset="img/10@2x.jpg 2x, img/10@3x.jpg 3x" alt="conferences img_2">
+            </div>
+            <div class="conferences__card-box">
+              <div class="conferences__card-title">
+                BAZA <br> NOCLEGOWA
+              </div>
+              <div class="conferences__card-des">
+                Lorem Ipsum is simply
+                dummy text of the printing and typesetting industry. Lorem Ipsum has
+              </div>
+              <button class="conferences__btn card__btn">SZCZEGÓŁY</button>
+            </div>
+
+          </div>
+
+          <div class="conferences__card">
+            <div class="conferences__card-img">
+              <img src="img/23.jpg" srcset="img/23@2x.jpg 2x, img/23@3x.jpg 3x" alt="conferences img_3">
+            </div>
+            <div class="conferences__card-box">
+              <div class="conferences__card-title">
+                WIELE <br> ATRAKCJI
+              </div>
+              <div class="conferences__card-des">
+                Lorem Ipsum is simply
+                dummy text of the printing and typesetting industry. Lorem Ipsum has
+              </div>
+              <button class="conferences__btn card__btn">SZCZEGÓŁY</button>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="booking-section">
+        <div class="booking-section__title">
+          ZAREZERWUJ ONLINE - WYBIERZ TERMIN
+        </div>
+        <div class="booking-section__app">
+          <div class="booking-horizontal">
+            <div class="date">
+              <div class="date__left">
+                <span class="date__day">28</span>
+                <div class="date__box">
+                  <span class="date__mounth">KWI 18'</span>
+                  <svg class="date__icon">
+                    <use xlink:href="img/sprite.svg#drop-down-arrow" />
+                  </svg>
+                </div>
+
+              </div>
+              <div class="date__right">
+                <span class="date__day">29</span>
+                <div class="date__box">
+                  <span class="date__mounth">KWI 18'</span>
+                  <svg class="date__icon">
+                    <use xlink:href="img/sprite.svg#drop-down-arrow" />
+
+                  </svg>
+                </div>
+
+              </div>
+            </div>
+            <div class="booking-horizontal__cta">
+              <span>rezerwuj online</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__column-box footer__column-box--1">
+          <div class="footer__column">
+            <div class="footer__logo">
+              <img src="./img/brand.png" width="48" height="56" alt="brand-logo">
+            </div>
+            <div class="footer__address footer__text">
+              <p> ul. Błotna, 12-122 Miasteczko</p>
+              <p><a href="tel:+48123456789">+48 123 456 789</a></p>
+              <p><a href="mailto:recepcja@loremipsumhotel.pl">recepcja@loremipsumhotel.pl</a></p>
+              <hr class="footer__line">
+              <p><a href="#">Profil Facebook</a></p>
+            </div>
+          </div>
+          <div class="footer__column">
+            <div class="footer__navigation footer__text">
+              <div class="footer-column-title">
+                NAWIGACJA
+              </div>
+              <ul>
+                <li><a>Hotel</a></li>
+                <li><a>Pokoje</a></li>
+                <li><a>Oferty</a></li>
+                <li><a>Restauracja</a></li>
+                <li><a>Konferencje</a></li>
+                <li><a>Spa</a></li>
+                <li><a>Atrakcje</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Kontakt</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__column-box footer__column-box--2">
+          <div class="footer__column">
+            <div class="footer-column-title">
+              SPRAWDŹ TAKŻE
+            </div>
+            <div class="footer__link footer__text">
+              <a href="#">Przykładowy link</a>
+              <a href="#">Przykładowy link</a>
+              <a href="#">Przykładowy link</a>
+              <a href="#">Przykładowy link</a>
+              <a href="#">Przykładowy link</a>
+            </div>
+          </div>
+          <div class="footer__column">
+            <div class="footer-column-title">
+              NEWSLETTER
+            </div>
+            <div class="footer__newsleter footer__text">
+              <p>Bądź na bieżąco z naszymi ofertami!</p>
+              <div class="inputContainer">
+                <span class="footer__icon-box">
+                  <svg class="footer__icon">
+                    <use xlink:href="img/sprite.svg#envelope" />
+                  </svg>
+                </span>
+
+                <input class="footer__input" type="email" name="email" id="email" placeholder="Podaj adres e-mail">
+              </div>
+
+            </div>
+            <div class="footer__prices">
+              <img src="img/Layer7.jpg" srcset="img/Layer7@2x.jpg 2x,
+              img/Layer7@3x.jpg 3x" alt="recomendation">
+              <img src="img/Layer6.jpg" srcset="img/Layer6@2x.jpg 2x,
+              img/Layer6@3x.jpg 3x" alt="certificate">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__bottom-column">
+          Copyright © 2020 Lorem ipsum
+        </div>
+        <div class="footer__bottom-column">
+          <img src="img/Layer 8.jpg" srcset="img/Layer 8@2x.jpg 2x,
+          img/Layer 8@3x.jpg 3x" alt="Layer">
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/app.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      loop: true,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.slider__set--right',
+        prevEl: '.slider__set--left',
+      },
+    })
+  </script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.package-slider', {
+      slidesPerView: 'auto',
+      spaceBetween: 5,
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      // init: false,
+
+      breakpoints: {
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },
+
+      }
+    });
+  </script>
+
+</body>
+
+</html>

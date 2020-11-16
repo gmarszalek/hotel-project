@@ -1,0 +1,384 @@
+// section about
+.about {
+  background-color: $pale-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 40px;
+
+  @include respond(bp_large) {
+    flex-direction: row;
+  }
+
+  &__left {
+    flex: 0 0 40%;
+    width: 100%;
+    height: 559px;
+    overflow: hidden;
+    
+    img {
+      max-width: 100%;
+      height: 559px;
+      object-fit: none;
+
+      @include respond(bp_medium) {
+        height: 350px;
+      }
+    }
+  }
+  &__right {
+    
+    margin-top: -60px;
+    @include respond(bp_largest) {
+      margin-top: -100px;
+    }
+  }
+  @include respond(bp_largest) {
+    padding: 60px;
+  }
+}
+
+// section feedback
+.feedback {
+  position: relative;
+  max-width: 1340px;
+  overflow: hidden;
+
+  &__background {
+    max-width: 1340px;
+    width: 100%;
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: none;
+      object-position: 50% 0%;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+
+    @include respond(bp_medium) {
+      width: 100%;
+      padding: 0 5px;
+    }
+  }
+
+  &__quotes-mark {
+    color: $color-orange;
+    font-size: 80px;
+    line-height: 10px;
+
+    @include respond(bp_medium) {
+      font-size: 35px;
+      line-height: 5px;
+    }
+    @include respond(bp_largest) {
+      line-height: 42px;
+    }
+  }
+
+  &__text--color {
+    color: $color-orange;
+    letter-spacing: 0.75px;
+    line-height: 35px;
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+    @include respond(bp_medium) {
+      line-height: 30px;
+      font-size: 18px;
+    }
+    @include respond(bp_largest) {
+      line-height: 42px;
+    }
+  }
+
+  &__text-author {
+    letter-spacing: 2.4px;
+    line-height: 23px;
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+  &__btn {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%);
+    line-height: 60px;
+
+    @include respond(bp_medium) {
+      line-height: 40px;
+      bottom: 30px;
+    }
+  }
+  
+}
+
+// section package
+.package {
+  position: relative;
+  padding: 60px 30px;
+
+  @include respond(bp_largest) {
+   padding: 60px;
+  }
+
+  &__title{
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    margin-top: 70px;
+
+    @include respond(bp_medium) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+  &__description {
+    flex: 0 0 340px;
+    max-width: 340px;
+    @include respond(bp_medium) {
+     margin-bottom: 50px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+  }
+}
+
+// section advantages
+.advantages {
+  position: relative;
+  padding-bottom: 200px;
+
+  &__row--1{
+    background-color: $pale-grey;
+    padding: 220px 0;
+    margin-top: -200px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__description {
+    max-width: 827px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 20px;
+    p {
+      font-size: 22px;
+      line-height: 32px;
+      letter-spacing: 0.75px;
+      color: $color-grey-dark;
+
+      @include respond(bp_medium) {
+        font-size: 18px;
+      }
+      @include respond(bp_large) {
+        font-size: 25px;
+        line-height: 42px;
+      }
+    }
+    @include respond(bp_medium) {
+      margin-bottom: 20px;
+    }
+    @include respond(bp_large) {
+      padding: 0px;
+    }
+  }
+
+  &__row--2{
+    position: relative;
+  }
+
+  &__img {
+    position: relative;
+    max-width: 1200px;
+    height: 570px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: -150px;
+
+    @include respond(bp_medium) {
+      height: 350px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__card {
+    position: absolute;
+    max-width: 914px;
+    width: 100%;
+    bottom: -150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+  }
+  &__row--3{
+    position: relative;
+    margin-top: 400px;
+  }
+
+}
+
+// section conferences
+.conferences {
+  position: relative;
+  margin-bottom: 100px;
+
+  &__img {
+    max-width: 1340px;
+    width: 100%;
+    height: 523px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    padding: 0 30px;
+
+    @include respond(bp_medium) {
+      top: 20px;
+    }
+    @include respond(bp_large) {
+      top: 60px;
+    }
+    @include respond(bp_largest) {
+      top: 90px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @include respond(bp_medium) {
+      margin-bottom: 15px;
+    }
+    @include respond(bp_largest) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__row--2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: -200px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+
+    @include respond(bp_large) {
+      flex-wrap: nowrap;
+    }
+
+  }
+  .conferences__card:not(:last-child) {
+    margin-bottom: 110px;
+  }
+
+  &__card {
+    position: relative;
+    flex: 0 0 300px;
+    max-width: 300px;
+    
+    text-align: center;
+    z-index: 2;
+    cursor: pointer;
+
+    &-box {
+      position: absolute;
+      bottom: -100px;
+      left: 0;
+      right: 0;
+      background-color: $color-white;
+    }
+    &-img {
+      margin-bottom: 40px;
+      
+      img{
+        max-width: 100%;
+        height: 420px;
+        object-fit: cover;
+      }
+    }
+
+    &-des {
+      font-size: 17px;
+      line-height: 35px;
+      letter-spacing: 0.34px;
+      color: $color-grey-dark;
+      display: none;
+      margin-bottom: 20px;
+      padding: 20px 20px;
+    }
+
+    &-title {
+      font-size: 20px;
+      text-transform: uppercase;
+      line-height: 32px;
+      letter-spacing: 6px;
+      margin-top: 25px;
+      margin-bottom: 13px;
+    }
+  }
+ 
+  &__card:hover .conferences__card-des {
+    display: block;
+  }
+
+  &__card:hover .conferences__card-box {
+    border: solid 1px $color-grey-5;
+  }
+
+  &__card:hover .conferences__btn {
+    color: $color-white;
+    background-color: $color-orange;
+  }
+
+}
+
+// section booking
+.booking-section {
+  background-color: $color-black;
+  padding: 50px 0px;
+
+  &__title {
+    text-align: center;
+    color: $color-white;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 4.5px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+}

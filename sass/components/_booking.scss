@@ -1,0 +1,234 @@
+.booking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  &__title {
+    display: none;
+    text-align: center;
+    margin-top: 27px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $color-grey-medium;
+    letter-spacing: 4.8px;
+
+    @include respond(bp_large) {
+      display: block;
+    }
+  }
+
+  .date {
+    display: flex;
+    justify-content: space-around;
+
+    &__box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__left,
+    &__right {
+      display: flex;
+      
+      justify-content: center;
+      align-items: center;
+      padding: 10px 30px;
+      margin-top: 10px;
+
+      @include respond(bp_medium) {
+        padding: 10px 20px;
+      
+      }
+      @include respond(bp_large) {
+        flex-direction: column;
+        padding: 10px 20px;
+      }
+    }
+
+    &__left {
+      border-right: solid 1px #ccc;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 92%;
+        width: 28px;
+        height: 1px;
+        background-color: $color-orange;
+
+        @include respond(bp_large) {
+          top: 28%;
+          left: 85%;
+        }
+      }
+    }
+
+    &__day {
+      font-size: 40px;
+      letter-spacing: 5px;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    &__mounth {
+      text-transform: uppercase;
+      font-size: 14px;
+      color: $color-grey-4;
+      margin-bottom: 10px;
+    }
+
+    &__icon {
+      fill: $color-orange;
+      width: 12px;
+      height: 12px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__cta {
+    background-color: $color-orange;
+    text-align: center;
+    height: 60px;
+    width: 250px;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    line-height: 60px;
+    margin-bottom: 20px;
+
+    @include respond(bp_medium) {
+      height: 40px;
+      width: 250px;
+      line-height: 40px;
+    }
+  }
+
+  &__info {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+
+    @include respond(bp_large) {
+      display: flex;
+    }
+
+    &--color {
+      color: $color-orange;
+    }
+  }
+  &__icon {
+    width: 31px;
+    height: 31px;
+    fill: $color-orange;
+    margin: 0 15px;
+  }
+}
+
+.booking-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(bp_medium) {
+    flex-direction: column;
+  }
+
+
+  .date {
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-white;
+
+    &__left,
+    &__right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 6px 30px;
+
+      @include respond(bp_medium) {
+        padding: 6px 10px;
+      }
+    }
+
+    &__left {
+      border-right: solid 1px #ccc;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 92%;
+        width: 28px;
+        height: 1px;
+        background-color: $color-orange;
+      }
+    }
+
+    &__day {
+      font-size: 40px;
+      letter-spacing: 5px;
+      font-weight: 300;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &__mounth {
+      text-transform: uppercase;
+      font-size: 14px;
+      color: $color-grey-4;
+    }
+
+    &__icon {
+      fill: $color-orange;
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &__cta {
+    background-color: $color-orange;
+    text-align: center;
+    height: 60px;
+    width: 256px;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    line-height: 60px;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+
+    &--color {
+      color: $color-orange;
+    }
+  }
+  &__icon {
+    width: 31px;
+    height: 31px;
+    fill: $color-orange;
+    margin: 0 15px;
+  }
+}

@@ -1,0 +1,52 @@
+.section-heading {
+  font-size: 28px;
+  letter-spacing: 8.4px;
+  text-transform: uppercase;
+  line-height: 40px;
+  color: $color-black;
+  font-weight: normal;
+  h2 {
+    font-size: 28px;
+    font-weight: normal;
+
+    @include respond(bp_medium) {
+      font-size: 22px;
+    }
+  }
+}
+
+.section-heading--white {
+
+  color: $color-white;
+ 
+}
+
+h3.section-sub-heading {
+   
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 6px;
+    color: $color-black;
+  
+}
+
+.section-paragraph {
+  p {
+      font-size: 17px;
+      line-height: 35px;
+      letter-spacing: 0.51px;
+      color: $color-grey-light;
+
+      @include respond(bp_medium) {
+        line-height: 30px;
+        font-size: 15px;
+      }
+  }
+}
+
+.footer-column-title {
+  font-size: 15px;
+  line-height: 40px;
+  letter-spacing: 4.5px;
+  margin-bottom: 15px;
+}

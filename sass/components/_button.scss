@@ -1,0 +1,49 @@
+.btn-lg {
+  color: $color-white;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  width: 240px;
+  height: 60px;
+  text-align: center;
+  background-color: $color-orange;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  @include respond(bp_medium) {
+    line-height: 40px;
+    height: 40px;
+  }
+}
+
+.btn-md {
+  color: $color-white;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  width: 240px;
+  height: 60px;
+  text-align: center;
+  background-color: $color-orange;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.card__btn {
+  color: $color-orange;
+  outline: none;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 40px;
+  letter-spacing: 4.8px;
+  background-color: white;
+  padding: 10px 15px;
+  transition: .3s;
+}
+
+
